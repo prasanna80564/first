@@ -1,7 +1,7 @@
-<html>
+<html></html>
     <head>
         <script>
-            let doit= () => {
+            let checkBaggageWeight = () => {
                 let inputText = document.getElementById("userInput").value;
                 let baggageWeight = Number(inputText);
 
@@ -10,13 +10,11 @@
                 } else {
                     alert("Your baggage is within the weight limit.");
                 }
-
             }
         </script>
     </head>
     <body>
-
-        <input type = "text" id = "userInput">
-        <button onclick="doit()">press me!</button>
+        <input type="text" id="userInput" placeholder="Enter baggage weight in kg">
+        <button onclick="checkBaggageWeight()">Check Weight</button>
     </body>
 </html>
