@@ -1,4 +1,4 @@
-<script>
+
     alert ("loading euler.js");
 
     let a = 3;
@@ -26,4 +26,3 @@
 
 
 
-</script>
