@@ -2,8 +2,14 @@
     <head>
         <script>
             let doit= () => {
-                inputtext=document.getelementbyid("userinput").value;
-                alert(number(inputtext)+1);
+                let inputText = document.getElementById("userInput").value;
+                let baggageWeight = Number(inputText);
+
+                if (baggageWeight > 15) {
+                    alert("Your baggage exceeds the limit of 15kg.");
+                } else {
+                    alert("Your baggage is within the weight limit.");
+                }
 
             }
         </script>
