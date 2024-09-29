@@ -1,4 +1,4 @@
-function calculateSum () {
+function Sums () {
     const n = parseInt(document.getElementById("numberInput").value);
     let sum = 0;
     
