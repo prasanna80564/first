@@ -8,4 +8,4 @@ function sumOfMultiples(a, b, n) {
     return sum;
 }
 
-alert(sumOfMultiples(3, 5, 1000))
+alert(sumOfMultiples(3, 5, 10))
