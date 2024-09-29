@@ -1,4 +1,4 @@
-function sumOfMultiples(a, b, n) {
+function calculateSum() (a, b, n) {
     const num = parseInt(document.getElementById("numberInput").value);
     let sum = 0;
     for (let i = 0; i < n; i++) {
@@ -9,4 +9,4 @@ function sumOfMultiples(a, b, n) {
     return sum;
 }
 
-alert(sumOfMultiples);
+alert(calculateSum);
