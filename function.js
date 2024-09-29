@@ -12,7 +12,7 @@ function sumofmultiplies(){
 
 }
 
-    let result = sumOfMultiples(3, 5, 10);  
+    let result = sumOfMultiples(a,b,n);  
     console.log (result);
 
     
