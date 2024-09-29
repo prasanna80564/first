@@ -14,7 +14,7 @@ function sumofmultiplies(){
     alert("The sum of all multiples :" + sum);
 }
 
-     sumofmultiplies(a,b,n);  
+ sumofmultiplies(a,b,n);  
    
 
     
