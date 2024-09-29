@@ -11,11 +11,11 @@ function sumofmultiplies(){
             sum += i;
         }
     }
-
+    alert("The sum of all multiples :" + sum);
 }
 
-    let result = sumofmultiplies(a,b,n);  
-    alert(result);
+     sumofmultiplies(a,b,n);  
+   
 
     
 
