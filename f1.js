@@ -7,6 +7,6 @@ function calculateSum (a, b, n) {
         }
     }
     
-    alert("The sum of multiples of 3 or 5 below " + num + " is: " + sum)
+    alert("The sum of multiples of 3 or 5 below " + n+ " is: " + sum)
 }
 
