@@ -1,11 +1,9 @@
-function calculateSum (n) {
+function calculateSum () {
     const num = parseInt(document.getElementById("numberInput").value);
     let sum = 0;
-    let a = 3;
-    let b = 5;
-
+    
   
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < num ; i++) {
         if (i % a === 0 || i % b === 0) {
             sum += i;
         }
