@@ -1,4 +1,4 @@
-function sumOfMultiples(a, b, n) {
+function sums(a, b, n) {
     let sum = 0;
     for (let i = 0; i < n; i++) {
         if (i % a === 0 || i % b === 0) {
@@ -8,4 +8,4 @@ function sumOfMultiples(a, b, n) {
     return sum;
 }
 
-alert(sumOfMultiples(3, 5, 10))
+alert(sums(3, 5, 10))
