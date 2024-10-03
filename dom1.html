@@ -16,7 +16,7 @@
     <div id = "input area">
         <input type="number" id="num1" placeholder="enter the first number">
         <input type ="number" id="num2" placeholder="enter the second number">
-        <button id="calc">calculate</button>
+        <button id="calch">calculate</button>
     </div>
 
     <div id="result"></div>
@@ -25,11 +25,11 @@
     <script>
         const num1Input = document.getElementById('num1')
         const num2Input = document.getElementById('num2')
-        const calc = document.getElementById('calc')
+        const calch = document.getElementById('calc')
         const resultDiv = document.getElementById('result')
         const inputarea = document.getElementById('input area')
 
-        calc.addEventListener('click',function(){
+        calch.addEventListener('click',function(){
             const num1 = parseFloat(num1Input.value);
             const num2 = parseFloat(num2Input.value);
             
