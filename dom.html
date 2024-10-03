@@ -15,8 +15,49 @@
         <input type ="number" id="num2" placeholder="enter the second number">
         <button id="calc">calculate</button>
     </div>
+
+    <div id="result"></div>
     
+
+    <script>
+        const num1Input = document.getElementById('num1')
+        const num2Input = document.getElementById('num2')
+        const calc = document.getElementById('calc')
+        const resultDiv = document.getElementById('result')
+        const inputarea = document.getElementById('input area')
+
+        calc.addEventListener('click',function(){
+            const num1 = parseFloat(num1Input.value);
+            const num2 = parseFloat(num2Input.value);
+            
+            if (!isNaN(num1) && !isNaN(num2)) {
+                const sum = num1 + num2
+            
+
+            resultDiv.textContent = 'The sum is: ${sum}';
+
+            inputarea.classList.add('hidden');
+            }else{
+                resultdiv.textContent = 'invalid';
+
+
+
+            }
+        }
+        
+        
+
+
+
+
+
+
+        
+
+
+
+    </script>
 </body>
-
-
 </html>
+
+
