@@ -21,23 +21,13 @@
 
     <script>
         function calculateSum() {
-            // Get the input values and handle cases where input might be empty
-            let a = document.getElementById('listA').value.trim();
-            let l = document.getElementById('listL').value.trim();
-
-            // Check if both inputs are provided
-            if (a === "" || l === "") {
-                document.getElementById('result').textContent = 'Please enter values for both lists.';
-                return;
-            }
-
-            // Convert comma-separated strings to arrays of integers
-            a = a.split(',').map(Number).filter(n => !isNaN(n));
-            l = l.split(',').map(Number).filter(n => !isNaN(n));
+            // Get the input values and convert them into arrays of integers
+            let a = document.getElementById('listA').value.split(',').map(Number);
+            let l = document.getElementById('listL').value.split(',').map(Number);
 
             let totalSum = 0;
 
-            // Check each element in l to see if it's divisible by any element in a
+            // Check each element in l if it's divisible by any element in a
             for (let num of l) {
                 for (let divisor of a) {
                     if (num % divisor === 0) {
