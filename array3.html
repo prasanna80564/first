@@ -21,23 +21,23 @@
 
     <script>
         function calculateSum() {
-            // Get the input values and convert them into arrays of integers
+           
             let a = document.getElementById('listA').value.split(',').map(Number);
             let l = document.getElementById('listL').value.split(',').map(Number);
 
             let totalSum = 0;
 
-            // Check each element in l if it's divisible by any element in a
+            
             for (let num of l) {
                 for (let divisor of a) {
                     if (num % divisor === 0) {
                         totalSum += num;
-                        break;  // Avoid adding the same number multiple times
+                        break;  
                     }
                 }
             }
 
-            // Display the result
+           
             document.getElementById('result').textContent = 'Sum of multiples: ' + totalSum;
         }
     </script>
