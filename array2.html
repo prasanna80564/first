@@ -1,0 +1,38 @@
+<html>
+    <head>
+        multiplies 
+    </head>
+    <body>
+        <h2>sum of multiplies</h2>
+        <label for ="listA">ENTER THE LIST A:</label>
+        <input type="text" id="listA" placeholder="eg.2,3,4,5 "><br><br>
+        <label for ="listL">ENTER THE LIST L</label>
+        <input type="text" id="listL" placeholder="eg.2,3,4,5"><br><br>
+        <button onclick="calculatesum()">calculate</button>
+        <h3>result:</h3>
+        <p id="result"></p>
+
+        <script> 
+        function calculatesum() {
+            let a = document.getElementById('listA').value.split(',').map(Number);
+            let l = document.getElementById('listL').value.split(',').map(Number);
+            let totalsum = 0;
+            for (let num of l){
+                for (let divisor of a ){
+                    if (num % divisor ===0);
+                    totalsum =+num;
+
+                }
+            }
+        }
+
+        document.getElementById('result').textContent = 'sum of the multiplies' +totalsum;
+        
+        
+        
+        
+        </script>
+
+       
+    </body>
+</html>
