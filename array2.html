@@ -16,11 +16,12 @@
         function calculatesum() {
             let a = document.getElementById('listA').value.split(',').map(Number);
             let l = document.getElementById('listL').value.split(',').map(Number);
+           
             let totalsum = 0;
             for (let num of l){
                 for (let divisor of a ){
                     if (num % divisor ===0);
-                    totalsum =+num;
+                    totalsum += num;
 
                 }
             }
